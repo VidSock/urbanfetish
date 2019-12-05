@@ -412,7 +412,7 @@ export const IndexPageTemplate = ({
 <ScrollAnimation animateIn="" animateOut="" initiallyVisible={true} animateOnce={true} animatePreScroll={true}>
 <div className="container">
 <div className="content" style={{padding:'1rem 1rem',}}>
-<Image alt="Todd Lambert Web development for photographers" filename="workshop.jpg" /><br />
+<Image alt="Todd Lambert Web development for photographers" filename="frontpage/workshop.jpg" /><br />
 <h2>Unique Night Photography</h2>
 <p>Finding obscure locations and unusual subject matter, Todd has excelled at capturing rarely seen moments of time. The night is misunderstood and often feared.  Let his award winning portfolio prove to you that the night is indeed beautiful.</p>
 <br />
@@ -440,7 +440,7 @@ export const IndexPageTemplate = ({
 </div>
 
 <div className="stack" style={{width:'40%', margin:'0 0 0 1rem', fontSize:'70%', }}>
-<Image alt="Todd Lambert Web development for photographers" filename="todd.jpg" />Todd Lambert on location
+<Image alt="Todd Lambert Web development for photographers" filename="frontpage/todd.jpg" />Todd Lambert on location
 </div>
 
 </div>
@@ -464,7 +464,7 @@ export const IndexPageTemplate = ({
 <div className="content" style={{padding:'1rem 1rem', display:'flex', flexDirection:'row',}}>
 
 <div className="stack" style={{width:'40%', margin:'0 1rem 0 0', fontSize:'70%', }}>
-<Image alt="Todd Lambert Web development for photographers" filename="twilightscapes-rig.jpg" />Subaru Outback with 18-foot Aliner trailer coming out of Hideout Canyon, UT.
+<Image alt="Todd Lambert Web development for photographers" filename="frontpage/twilightscapes-rig.jpg" />Subaru Outback with 18-foot Aliner trailer coming out of Hideout Canyon, UT.
 </div>
 < br />
 <div className="stack" style={{width:'60%',}}>
