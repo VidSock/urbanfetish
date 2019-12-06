@@ -1,13 +1,14 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import logo from '../img/tw-logo-white.svg'
+import logo from '../img/urban-fetish-logo-pink.svg'
 import Headroom from "react-headroom"
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
-import { GoArrowUp, GoTelescope } from 'react-icons/go'
-import { GoGear } from 'react-icons/go'
+import { GoArrowUp } from 'react-icons/go'
+// import { GoTelescope } from 'react-icons/go'
+// import { GoGear } from 'react-icons/go'
 // import { FaQuestionCircle } from 'react-icons/fa'
 // import { AiFillBank } from 'react-icons/ai'
-import { FaRegAddressCard, FaTelegramPlane } from 'react-icons/fa'
+// import { FaRegAddressCard, FaTelegramPlane } from 'react-icons/fa'
 
 // import PopContact from '../components/PopContact'
 // import ScrollAnimation from 'react-animate-on-scroll'
@@ -38,8 +39,8 @@ const Navbar = class extends React.Component {
             <ul id="menu" className="menu">
             
             <li className="grad" style={{position:'relative',}}>
-              <Link id="galleries" className="navbar-item" to="/galleries"  style={{paddingRight:'50px',}}>
-               Galleries <GoTelescope className="txtshadow" style={{fontSize:'30px', position:'absolute', right:'4px', top:'12px',}}/>
+              <Link id="galleries" className="navbar-item" to="/galleries"  style={{paddingRight:'20px',}}>
+               Galleries
               </Link>
               
               </li>
@@ -53,14 +54,14 @@ const Navbar = class extends React.Component {
               
             
             <li className="grad" style={{position:'relative',}}>
-              <Link className="navbar-item" to="/about" style={{paddingRight:'50px',}}>
-                About <FaRegAddressCard className="txtshadow" style={{fontSize:'30px', position:'absolute', right:'10px', top:'15px',}}/>
+              <Link className="navbar-item" to="/about" style={{paddingRight:'20px',}}>
+                About
               </Link>
               </li>
               
                <li className="grad" style={{position:'relative',}}>
-              <Link className="navbar-item" to="/capabilities" style={{paddingRight:'50px',}}>
-                Gear <GoGear className="txtshadow" style={{fontSize:'30px', position:'absolute', right:'10px', top:'15px',}}/>
+              <Link className="navbar-item" to="/capabilities" style={{paddingRight:'20px',}}>
+                Gear
               </Link>
               </li>
               
@@ -81,7 +82,7 @@ const Navbar = class extends React.Component {
 
               <li style={{position:'',}}>
              
-             <label className="modal-btn grad" htmlFor="modal-toggle" style={{position:'relative', textShadow: '1px 2px 0px black', paddingRight:'20px',}}>Contact <FaTelegramPlane className="contact-icon txtshadow" style={{fontSize:'30px', position:'relative', right:'-6px', top:'12px',}}/></label> 
+             <label className="modal-btn grad" htmlFor="modal-toggle" style={{position:'relative', textShadow: '1px 2px 0px black', paddingRight:'20px',}}>Contact</label> 
              
               </li>
               

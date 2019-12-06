@@ -14,7 +14,7 @@ import styled from 'styled-components'
 const CustomBox = styled.div`
 
 .intro:before{
-	content: "About Twilightscapes";
+	content: "About Urban Fetish";
 position:absolute;
 display: flex;
 align-items: center;
@@ -129,7 +129,15 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
  <div className="split content container" style={{display:'flex', justifyContent:'center', alignItems:'center', position:'relative', width:'92%', margin:'0 auto', padding:'1rem', borderBottom:'4px solid #000', borderTop:'1px solid #000', boxShadow:'0px 0px 20px 0px #000', borderRadius:'0 0 20px 20px', overflow:'',}}>
 
  
- Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+<div><p>This website started as a means to display the urban decay photography of Todd Lambert. It has since morphed into a central location for displaying the art of decay, captured through a camera.</p>
+
+<p>Discovering a decrepit building or an abandoned car has become a major hobby for many people and this site wishes to bring only the best of best, to you and your browser window all while sitting comfortably at home or work.</p>
+
+<p>Take an adventure through abandoned ruins or a eerily spooky haunted house or hospital without having to leave your safe space.</p>
+
+<p>Tag along on journeys through some of the most remote and derelict locations around. Discover the beauty that is urban decay and acquire your own fetish for being where you’re not supposed to be.</p>
+
+<p>Please enjoy this Urban Fetish.</p></div>
 
  </div>
  

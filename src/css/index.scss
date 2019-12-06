@@ -5,8 +5,9 @@
 @import url("animate.css");
 @import url("custom.css");
 
-$primary: #1257a2;
+$primary: #e812e5;
 $red: #ff0000;
+// color:#e812e5;
 
 
 
@@ -238,16 +239,21 @@ main{min-height: 60vh;}//force v-scroll
 
 
 .grad{
-background: rgba(81, 182, 212, 1); /* Old browsers */
-background: -moz-radial-gradient(center, ellipse cover, rgba(126,209,234,1) 0%, rgba(65,145,186,1) 40%, rgba(3,73,127,1) 100%); /* FF3.6-15 */
-background: -webkit-radial-gradient(center, ellipse cover, rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: radial-gradient(ellipse at center, rgba(87, 184, 212, 1) 0%,rgba(51, 127, 165, 1) 40%,rgba(2, 54, 95, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: #e812e5;
+background: -moz-radial-gradient(center, ellipse cover,  #e812e5 0%, #e812e5 32%, #ef00ef 50%, #d212e8 69%, #c105ab 100%);
+background: -webkit-radial-gradient(center, ellipse cover,  #e812e5 0%,#e812e5 32%,#ef00ef 50%,#d212e8 69%,#c105ab 100%);
+background: radial-gradient(ellipse at center,  #e812e5 0%,#e812e5 32%,#ef00ef 50%,#d212e8 69%,#c105ab 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e812e5', endColorstr='#c105ab',GradientType=1 );
+
+
 }
 .grad:hover{
-background: rgb(126,209,234); /* Old browsers */
-background: -moz-radial-gradient(center, ellipse cover, rgba(126,209,234,1) 0%, rgba(65,145,186,1) 40%, rgba(3,73,127,1) 100%); /* FF3.6-15 */
-background: -webkit-radial-gradient(center, ellipse cover, rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: radial-gradient(ellipse at center, rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: #d611bf;
+background: -moz-radial-gradient(center, ellipse cover,  #d611bf 0%, #e812e5 32%, #db00c9 50%, #d212e8 69%, #c405c4 100%);
+background: -webkit-radial-gradient(center, ellipse cover,  #d611bf 0%,#e812e5 32%,#db00c9 50%,#d212e8 69%,#c405c4 100%);
+background: radial-gradient(ellipse at center,  #d611bf 0%,#e812e5 32%,#db00c9 50%,#d212e8 69%,#c405c4 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d611bf', endColorstr='#c405c4',GradientType=1 );
+
 }
 
 .galgrad{
@@ -581,7 +587,7 @@ padding:0 0;
 }
 
 .header .logo {
-  padding: 3px 1rem 5px 1.8rem;
+  padding: 0 1rem 0 1.8rem;
   text-decoration: none;
   background:none;
   height: 100%;
@@ -791,10 +797,11 @@ z-index: -1;
 }
 
 [aria-current] {
-background: rgb(3,73,127); /* Old browsers */
-background: -moz-linear-gradient(left, rgba(3,73,127,1) 0%, rgba(65,145,186,1) 60%, rgba(126,209,234,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, rgba(3,73,127,1) 0%,rgba(65,145,186,1) 60%,rgba(126,209,234,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, rgba(3,73,127,1) 0%,rgba(65,145,186,1) 60%,rgba(126,209,234,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: #e812e5;
+background: -moz-radial-gradient(center, ellipse cover,  #e812e5 0%, #e812e5 32%, #ef00ef 50%, #d212e8 69%, #c105ab 100%);
+background: -webkit-radial-gradient(center, ellipse cover,  #e812e5 0%,#e812e5 32%,#ef00ef 50%,#d212e8 69%,#c105ab 100%);
+background: radial-gradient(ellipse at center,  #e812e5 0%,#e812e5 32%,#ef00ef 50%,#d212e8 69%,#c105ab 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e812e5', endColorstr='#c105ab',GradientType=1 );
 
 }
 
@@ -884,7 +891,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
  body.dark{
 background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2319181a' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 }
-body.dark .outer:after, body.light .outer:after{content: (''); background-image: url('../img/dark-2024127.svg'); height: 100vh; width:100%; background-size: cover; position:fixed; top:0; left:0; z-index:-1; animation: fadeIn 6s; }
+body.dark .outer:after, body.light .outer:after{content: (''); background-image: url('../img/fence-field-4046441_640.png'); height: 100vh; width:100%; background-size: cover; position:fixed; top:0; left:0; z-index:-1; animation: fadeIn 6s; }
 
 
 
@@ -1132,10 +1139,11 @@ body.light .back-to-top svg:hover, .back-to-top svg:hover{color:$primary;}
 
 
 [aria-current] {
-background: rgba(81, 182, 212, 1); /* Old browsers */
-background: -moz-radial-gradient(center, ellipse cover, rgba(126,209,234,1) 0%, rgba(65,145,186,1) 40%, rgba(3,73,127,1) 100%); /* FF3.6-15 */
-background: -webkit-radial-gradient(center, ellipse cover, rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: radial-gradient(ellipse at center, rgba(87, 184, 212, 1) 0%,rgba(51, 127, 165, 1) 40%,rgba(2, 54, 95, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: #e812e5;
+background: -moz-radial-gradient(center, ellipse cover,  #e812e5 0%, #e812e5 32%, #ef00ef 50%, #d212e8 69%, #c105ab 100%);
+background: -webkit-radial-gradient(center, ellipse cover,  #e812e5 0%,#e812e5 32%,#ef00ef 50%,#d212e8 69%,#c105ab 100%);
+background: radial-gradient(ellipse at center,  #e812e5 0%,#e812e5 32%,#ef00ef 50%,#d212e8 69%,#c105ab 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e812e5', endColorstr='#c105ab',GradientType=1 );
 	border-left:0px solid #000;
 	border-right:1px solid #000;
 	position:relative;

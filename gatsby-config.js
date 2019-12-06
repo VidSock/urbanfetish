@@ -2,8 +2,8 @@ var proxy = require('http-proxy-middleware')
 
 module.exports = {
   siteMetadata: {
-    title: 'Follow Me Into The Night | Unique Photography by Twilightscapes',
-    siteUrl: `https://twilightscapes.com`,
+    title: 'Abandoned Urbex Urban Exploration Photos and Locations | Urban Fetish',
+    siteUrl: `https://urbanfetish.com`,
     description:
       'Twilightscapes brings new definitions to the genre of night photography. Experience some of the most remote, desolate locations photographed in the dead of night by world renown night photographer Todd Lambert.',
   },
@@ -90,7 +90,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        TrackingId: 'UA-49869143-1',
+        TrackingId: 'UA-140479230-1',
         respectDNT: false,
       }
     },
@@ -103,13 +103,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Twilightscapes`,
-        short_name: `Twilightscapes`,
+        name: `UrbanFetish`,
+        short_name: `UrbanFetish`,
         start_url: `/`,
         background_color: `#222`,
         theme_color: `#FAE042`,
         display: `standalone`,
-        icon: `src/img/tw-logo-white.svg`,
+        icon: `src/img/urban-fetish-icon.png`,
       },
     },
     

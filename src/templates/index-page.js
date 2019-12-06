@@ -11,7 +11,7 @@ import { Link } from 'gatsby'
 // import Features from '../components/Features'
 // import BlogRoll from '../components/BlogRoll'
 import ScrollAnimation from 'react-animate-on-scroll'
-import { IoIosArrowDropdownCircle } from 'react-icons/io'
+// import { IoIosArrowDropdownCircle } from 'react-icons/io'
 // import { FaAccessibleIcon, FaRegAddressCard, FaOdnoklassniki, FaBlind } from 'react-icons/fa'
 import { FaRegAddressCard } from 'react-icons/fa'
 import { GoGear, GoTelescope } from 'react-icons/go'
@@ -27,7 +27,7 @@ const CustomBox = styled.div`
 .intro img{border-radius:6px !important;}
 
 .intro:before{
-	content: "A pioneer in night photography";
+	content: "Urban Exploration Photography";
 
 position:absolute;
 display: flex;
@@ -243,7 +243,7 @@ export const IndexPageTemplate = ({
             float: 'none',
           }}
         >
-          Follow me
+          Take a walk
         </h1>
         </ScrollAnimation>
         
@@ -258,7 +258,7 @@ export const IndexPageTemplate = ({
             textAlign: 'right', 
           }}
         >
-          into the
+          on the
         </h2>
         </ScrollAnimation>
         
@@ -275,7 +275,7 @@ export const IndexPageTemplate = ({
             textTransform: 'uppercase', 
           }}
         >
-          Night
+          Wild Side
         </h3>
         </ScrollAnimation>
 
@@ -286,10 +286,10 @@ export const IndexPageTemplate = ({
 
         
         </div>
-        
+       
 
-<div className=" kenburns-bottom-right" style={{position:'absolute', top:'0', width:'100vw', overflow:'hidden', border:'0px solid red', zIndex:'0',}}>
-        <Image className="" alt="Todd Lambert Web development for photographers" filename="night283.jpg" style={{backgroundSize:'cover', zIndex:'0',}} />
+<div className=" kenburns-bottom" style={{position:'absolute', top:'0', width:'100vw', overflow:'hidden', border:'0px solid red', zIndex:'0',}}>
+        <Image className="" alt="Todd Lambert Web development for photographers" filename="favorites-abandoned11.jpg" style={{backgroundSize:'cover', zIndex:'0',}} />
         </div>
 
 </div>
@@ -297,112 +297,7 @@ export const IndexPageTemplate = ({
 
 
   
-    <div id="hero"
-      className="full-width-image kenburns-top"
-      style={{ display:'none',
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-        backgroundPosition: `bottom right`,
-        width: '100%',
-        backgroundSize: 'cover',
-        height: '100vh',
-		paddingTop:'20px',
-        position: 'relative',
-//         overflowX: 'scroll',
-      }}
-    >
-    
-
-    
-    
- 
-
-    
-    
-
-    
-    <ScrollAnimation animateIn="bounceInDown" delay={1000}>
-        <h1
-          className="normal txtshadow-header hit-the-floor"
-          style={{
-            color: '#fff',
-            fontSize: '5rem',
-           position: 'relative',
-//            top: '100px',
-           right: '1%',
-//            backgroundColor: '#ff0000',
-            textAlign: 'right', 
-            float: 'none',
-          }}
-        >
-          Follow me
-        </h1>
-        </ScrollAnimation>
         
-        <ScrollAnimation animateIn="bounceInRight" delay={1100}>
-        <h2
-          className="narrow txtshadow mobile-txt"
-          style={{
-           fontSize:'3rem',
-           color: 'white',
-           position: 'relative',
-        right: '5%',
-            textAlign: 'right', 
-          }}
-        >
-          into the
-        </h2>
-        </ScrollAnimation>
-        
-        
-        <ScrollAnimation animateIn="bounceInUp" delay={1200}>
-        <h3
-          className="boom"
-          style={{
-           fontSize:'6rem',
-           color: 'white',
-           position: 'relative',
-//            top: '230px',
-           right: '1%',
-            textAlign: 'right',
-            textTransform: 'uppercase', 
-          }}
-        >
-          Night
-        </h3>
-        </ScrollAnimation>
-        
-        
-
-        
-        
-        
-        <div className="mediacta1" style={{position: 'absolute', margin:'0 auto', top: '65%', textAlign:'center', width:'auto',}}>
-	Nothing
-        </div>
-        
-        
-        
-        
-        <ScrollAnimation animateOut="fadeOut" initiallyVisible={true} animateOnce={true} animatePreScroll={true} style={{position:'absolute', left:'3%', right:'3%', textAlign: 'center', bottom:'15%', fontSize: '80%', color: '#fff', zIndex: '0',}}>
-        <div className="scrolldown txtshadow-header">SCROLL <IoIosArrowDropdownCircle /> MORE</div></ScrollAnimation>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-       
-    </div>
-    
-    
     
 
 
@@ -413,8 +308,8 @@ export const IndexPageTemplate = ({
 <div className="container">
 <div className="content" style={{padding:'1rem 1rem',}}>
 <Image alt="Todd Lambert Web development for photographers" filename="frontpage/workshop.jpg" /><br />
-<h2>Unique Night Photography</h2>
-<p>Finding obscure locations and unusual subject matter, Todd has excelled at capturing rarely seen moments of time. The night is misunderstood and often feared.  Let his award winning portfolio prove to you that the night is indeed beautiful.</p>
+<h2>Urban Exploration Photography</h2>
+<p>Take a walk on the wild side and follow along as Todd Lambert goes in search of the creepiest, freakiest, spookiest abandoned and desolate locations he can find. See places that you wouldn&apos;t dare go into, especially at night.</p>
 <br />
 <Link className="special grad" to="/galleries" style={{color:'#fff', textDecoration:'none', display:'flex',  justifyContent:'center', width:'230px',  padding:'3px 1rem 0 1rem', margin:'0 auto',}}>View Galleries <span style={{fontSize:'120%', position:'relative', right:'-8px', top:'0', color:'#fff',}}><GoTelescope /></span></Link>
 

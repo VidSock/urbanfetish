@@ -31,10 +31,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', end
 }
 
 .galmenu [aria-current] {
-background: rgb(126,209,234); /* Old browsers */
-background: -moz-radial-gradient(center, ellipse cover, rgba(126,209,234,1) 0%, rgba(65,145,186,1) 40%, rgba(3,73,127,1) 100%); /* FF3.6-15 */
-background: -webkit-radial-gradient(center, ellipse cover, rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: radial-gradient(ellipse at center, rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: #d611bf;
+background: -moz-radial-gradient(center, ellipse cover,  #d611bf 0%, #e812e5 32%, #db00c9 50%, #d212e8 69%, #c405c4 100%);
+background: -webkit-radial-gradient(center, ellipse cover,  #d611bf 0%,#e812e5 32%,#db00c9 50%,#d212e8 69%,#c405c4 100%);
+background: radial-gradient(ellipse at center,  #d611bf 0%,#e812e5 32%,#db00c9 50%,#d212e8 69%,#c405c4 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d611bf', endColorstr='#c405c4',GradientType=1 );
 }
 
 
@@ -66,21 +67,21 @@ const GalleryMenu = () => (
       
       <li className="galmenu-item"><Link to="/galleries/favorites" className="galgrad" title="Favorites">Popular<br />Favorites</Link></li>
       
-      <li className="galmenu-item"><Link to="/galleries/milky-way" className="galgrad" title="Milky Way">Milky<br />Way</Link></li>
+      <li className="galmenu-item"><Link to="/galleries/still-life" className="galgrad" title="Milky Way">Still<br />Life</Link></li>
       
-      <li className="galmenu-item"><Link to="/galleries/cars" className="galgrad" title="All Cars">All<br />Cars</Link></li>
+      <li className="galmenu-item"><Link to="/galleries/doors" className="galgrad" title="Door Ways">Door<br />Ways</Link></li>
       
-	  <li className="galmenu-item"><Link to="/galleries/ghosttowns" className="galgrad" title="Ghost Towns">Ghost<br />Towns</Link></li>
+	  <li className="galmenu-item"><Link to="/galleries/industrial" className="galgrad" title="Ghost Towns">Modern<br />Industrial</Link></li>
 	  
-      <li className="galmenu-item"><Link to="/galleries/crazy-geology" className="galgrad" title="Crazy Geology">Crazy<br />Geology</Link></li>
+      <li className="galmenu-item"><Link to="/galleries/vehicles" className="galgrad" title="Crazy Geology">Vehicles<br />Transportation</Link></li>
       
       
       
       
       
       
-      <li className="galmenu-item has-app"><Link to="/vault/daylight" className="galgrad" title="During Daylight">During<br />Daylight</Link></li>
-      <li className="galmenu-item no-app"><Link to="/vault" className="galgrad" title="During Daylight">During<br />Daylight <FaLock  style={{position:'absolute', top:'0', right:'0', color:'#aaa',}} className="lock" /></Link></li>
+      <li className="galmenu-item has-app"><Link to="/vault/spooky" className="galgrad" title="During Daylight">During<br />Daylight</Link></li>
+      <li className="galmenu-item no-app"><Link to="/vault" className="galgrad" title="During Daylight">Spooky<br />Haunted <FaLock  style={{position:'absolute', top:'0', right:'0', color:'#aaa',}} className="lock" /></Link></li>
       
 
 
