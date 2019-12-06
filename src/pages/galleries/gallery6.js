@@ -11,7 +11,7 @@ import { FiZoomIn } from 'react-icons/fi'
 import styled from "styled-components"
 const CustomBox = styled.div`
 
-#galleries {
+#vault {
 	position:relative;
 background: rgb(126,209,234);
 background: -moz-radial-gradient(center,ellipse cover,rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%);
@@ -85,7 +85,6 @@ const Gal6Page = () => {
       />
       </div>
       </ScrollAnimation>
-      
       
       
 <GalleryMenu />
