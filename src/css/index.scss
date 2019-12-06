@@ -270,10 +270,14 @@ background: radial-gradient(ellipse at center, rgba(126,209,234,1) 0%,rgba(65,14
 
 
 .grad-vert{
-background: rgb(3,73,127); /* Old browsers */
-background: -moz-linear-gradient(left, rgba(3,73,127,1) 0%, rgba(65,145,186,1) 60%, rgba(126,209,234,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, rgba(3,73,127,1) 0%,rgba(65,145,186,1) 60%,rgba(126,209,234,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, rgba(3,73,127,1) 0%,rgba(65,145,186,1) 60%,rgba(126,209,234,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: #9b0c92;
+background: -moz-linear-gradient(left,  #9b0c92 39%, #e812e5 58%, #db00c9 99%, #9b0c92 100%);
+background: -webkit-linear-gradient(left,  #9b0c92 39%,#e812e5 58%,#db00c9 99%,#9b0c92 100%);
+background: linear-gradient(to right,  #9b0c92 39%,#e812e5 58%,#db00c9 99%,#9b0c92 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b0c92', endColorstr='#9b0c92',GradientType=1 );
+
+
+
 }
 
 
