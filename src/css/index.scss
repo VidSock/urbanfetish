@@ -107,12 +107,11 @@ html::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 }
 html::-webkit-scrollbar-thumb {
-  background-color: $primary;
-  
-background: rgb(3,73,127); /* Old browsers */
-background: -moz-linear-gradient(left, rgba(3,73,127,1) 0%, rgba(65,145,186,1) 60%, rgba(126,209,234,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, rgba(3,73,127,1) 0%,rgba(65,145,186,1) 60%,rgba(126,209,234,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, rgba(3,73,127,1) 0%,rgba(65,145,186,1) 60%,rgba(126,209,234,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: #9b0c92;
+background: -moz-linear-gradient(top,  #9b0c92 0%, #e812e5 32%, #d212e8 47%, #d212e8 47%, #db00c9 68%, #9b0c92 100%);
+background: -webkit-linear-gradient(top,  #9b0c92 0%,#e812e5 32%,#d212e8 47%,#d212e8 47%,#db00c9 68%,#9b0c92 100%);
+background: linear-gradient(to bottom,  #9b0c92 0%,#e812e5 32%,#d212e8 47%,#d212e8 47%,#db00c9 68%,#9b0c92 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b0c92', endColorstr='#9b0c92',GradientType=0 );
   
   outline: 3px solid #999;
   border:1px solid #777;
@@ -239,22 +238,25 @@ main{min-height: 60vh;}//force v-scroll
 
 
 .grad{
-background: #e812e5;
-background: -moz-radial-gradient(center, ellipse cover,  #e812e5 0%, #e812e5 32%, #ef00ef 50%, #d212e8 69%, #c105ab 100%);
-background: -webkit-radial-gradient(center, ellipse cover,  #e812e5 0%,#e812e5 32%,#ef00ef 50%,#d212e8 69%,#c105ab 100%);
-background: radial-gradient(ellipse at center,  #e812e5 0%,#e812e5 32%,#ef00ef 50%,#d212e8 69%,#c105ab 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e812e5', endColorstr='#c105ab',GradientType=1 );
+background: #9b0c92;
+background: -moz-linear-gradient(left,  #9b0c92 0%, #e812e5 32%, #d212e8 47%, #d212e8 47%, #db00c9 68%, #9b0c92 100%);
+background: -webkit-linear-gradient(left,  #9b0c92 0%,#e812e5 32%,#d212e8 47%,#d212e8 47%,#db00c9 68%,#9b0c92 100%);
+background: linear-gradient(to right,  #9b0c92 0%,#e812e5 32%,#d212e8 47%,#d212e8 47%,#db00c9 68%,#9b0c92 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b0c92', endColorstr='#9b0c92',GradientType=1 );
 
 
 }
 .grad:hover{
-background: #d611bf;
-background: -moz-radial-gradient(center, ellipse cover,  #d611bf 0%, #e812e5 32%, #db00c9 50%, #d212e8 69%, #c405c4 100%);
-background: -webkit-radial-gradient(center, ellipse cover,  #d611bf 0%,#e812e5 32%,#db00c9 50%,#d212e8 69%,#c405c4 100%);
-background: radial-gradient(ellipse at center,  #d611bf 0%,#e812e5 32%,#db00c9 50%,#d212e8 69%,#c405c4 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d611bf', endColorstr='#c405c4',GradientType=1 );
+background: #9b0c92;
+background: -moz-linear-gradient(left,  #9b0c92 0%, #e812e5 39%, #db00c9 62%, #9b0c92 100%);
+background: -webkit-linear-gradient(left,  #9b0c92 0%,#e812e5 39%,#db00c9 62%,#9b0c92 100%);
+background: linear-gradient(to right,  #9b0c92 0%,#e812e5 39%,#db00c9 62%,#9b0c92 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b0c92', endColorstr='#9b0c92',GradientType=1 );
+
 
 }
+
+
 
 .galgrad{
 
@@ -797,11 +799,12 @@ z-index: -1;
 }
 
 [aria-current] {
-background: #e812e5;
-background: -moz-radial-gradient(center, ellipse cover,  #e812e5 0%, #e812e5 32%, #ef00ef 50%, #d212e8 69%, #c105ab 100%);
-background: -webkit-radial-gradient(center, ellipse cover,  #e812e5 0%,#e812e5 32%,#ef00ef 50%,#d212e8 69%,#c105ab 100%);
-background: radial-gradient(ellipse at center,  #e812e5 0%,#e812e5 32%,#ef00ef 50%,#d212e8 69%,#c105ab 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e812e5', endColorstr='#c105ab',GradientType=1 );
+background: #9b0c92;
+background: -moz-linear-gradient(left,  #9b0c92 0%, #e812e5 39%, #db00c9 62%, #9b0c92 100%);
+background: -webkit-linear-gradient(left,  #9b0c92 0%,#e812e5 39%,#db00c9 62%,#9b0c92 100%);
+background: linear-gradient(to right,  #9b0c92 0%,#e812e5 39%,#db00c9 62%,#9b0c92 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b0c92', endColorstr='#9b0c92',GradientType=1 );
+
 
 }
 
@@ -1139,11 +1142,12 @@ body.light .back-to-top svg:hover, .back-to-top svg:hover{color:$primary;}
 
 
 [aria-current] {
-background: #e812e5;
-background: -moz-radial-gradient(center, ellipse cover,  #e812e5 0%, #e812e5 32%, #ef00ef 50%, #d212e8 69%, #c105ab 100%);
-background: -webkit-radial-gradient(center, ellipse cover,  #e812e5 0%,#e812e5 32%,#ef00ef 50%,#d212e8 69%,#c105ab 100%);
-background: radial-gradient(ellipse at center,  #e812e5 0%,#e812e5 32%,#ef00ef 50%,#d212e8 69%,#c105ab 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e812e5', endColorstr='#c105ab',GradientType=1 );
+background: #9b0c92;
+background: -moz-linear-gradient(left,  #9b0c92 0%, #e812e5 39%, #db00c9 62%, #9b0c92 100%);
+background: -webkit-linear-gradient(left,  #9b0c92 0%,#e812e5 39%,#db00c9 62%,#9b0c92 100%);
+background: linear-gradient(to right,  #9b0c92 0%,#e812e5 39%,#db00c9 62%,#9b0c92 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b0c92', endColorstr='#9b0c92',GradientType=1 );
+
 	border-left:0px solid #000;
 	border-right:1px solid #000;
 	position:relative;

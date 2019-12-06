@@ -12,13 +12,22 @@ import { FiZoomIn } from 'react-icons/fi'
 import styled from "styled-components"
 const CustomBox = styled.div`
 
+
 #galleries {
-	position:relative;
-background: #e812e5;
-background: -moz-radial-gradient(center, ellipse cover,  #e812e5 0%, #e812e5 32%, #ef00ef 50%, #d212e8 69%, #c105ab 100%);
-background: -webkit-radial-gradient(center, ellipse cover,  #e812e5 0%,#e812e5 32%,#ef00ef 50%,#d212e8 69%,#c105ab 100%);
-background: radial-gradient(ellipse at center,  #e812e5 0%,#e812e5 32%,#ef00ef 50%,#d212e8 69%,#c105ab 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e812e5', endColorstr='#c105ab',GradientType=1 );
+background: #9b0c92;
+background: -moz-linear-gradient(left,  #9b0c92 0%, #e812e5 39%, #db00c9 62%, #9b0c92 100%);
+background: -webkit-linear-gradient(left,  #9b0c92 0%,#e812e5 39%,#db00c9 62%,#9b0c92 100%);
+background: linear-gradient(to right,  #9b0c92 0%,#e812e5 39%,#db00c9 62%,#9b0c92 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b0c92', endColorstr='#9b0c92',GradientType=1 );
+}
+#galleries:before{
+content:" ";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2319181a' fill-opacity='0.15' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 .intro:before{

@@ -19,6 +19,8 @@ background: -webkit-radial-gradient(center,ellipse cover,rgba(126,209,234,1) 0%,
 background: radial-gradient(ellipse at center,rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%);
 }
 
+
+
 .intro:before{
 	content: "Gallery 8";
 

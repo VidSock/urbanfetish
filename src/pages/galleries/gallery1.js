@@ -13,12 +13,11 @@ import styled from "styled-components"
 const CustomBox = styled.div`
 
 #galleries {
-	position:relative;
-background: #e812e5;
-background: -moz-radial-gradient(center, ellipse cover,  #e812e5 0%, #e812e5 32%, #ef00ef 50%, #d212e8 69%, #c105ab 100%);
-background: -webkit-radial-gradient(center, ellipse cover,  #e812e5 0%,#e812e5 32%,#ef00ef 50%,#d212e8 69%,#c105ab 100%);
-background: radial-gradient(ellipse at center,  #e812e5 0%,#e812e5 32%,#ef00ef 50%,#d212e8 69%,#c105ab 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e812e5', endColorstr='#c105ab',GradientType=1 );
+background: #9b0c92;
+background: -moz-linear-gradient(left,  #9b0c92 0%, #e812e5 39%, #db00c9 62%, #9b0c92 100%);
+background: -webkit-linear-gradient(left,  #9b0c92 0%,#e812e5 39%,#db00c9 62%,#9b0c92 100%);
+background: linear-gradient(to right,  #9b0c92 0%,#e812e5 39%,#db00c9 62%,#9b0c92 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b0c92', endColorstr='#9b0c92',GradientType=1 );
 }
 
 

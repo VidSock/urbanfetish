@@ -65,7 +65,7 @@ const GalleryMenu = () => (
 
 <ul className="galmenu custom-gal" style={{}}>
       
-      <li className="galmenu-item"><Link to="/galleries/favorites" className="galgrad" title="Favorites">Popular<br />Favorites</Link></li>
+      <li className="galmenu-item"><Link to="/galleries/favorites" className="galgrad" title="Favorites" id="favorites">Popular<br />Favorites</Link></li>
       
       <li className="galmenu-item"><Link to="/galleries/still-life" className="galgrad" title="Milky Way">Still<br />Life</Link></li>
       
