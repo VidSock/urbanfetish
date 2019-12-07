@@ -24,6 +24,9 @@ import styled from "styled-components"
 const CustomBox = styled.div`
 *, *:before, *:after { box-sizing: border-box; }
 
+
+
+
 .intro img{border-radius:6px !important;}
 
 .intro:before{
