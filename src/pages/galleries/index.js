@@ -85,11 +85,11 @@ const Gal1Page = () => {
   const data = useStaticQuery(Galleries)
   return (
 	  <CustomBox>
-    <Layout>
-    <Install/>
+    
+    
+<Layout>
 
-
-      
+      <Install/>
       
 <div className="zoomer" style={{paddingTop:'0', display:'flex',alignItems:'center', justifyContent:'center',}}>
       <h4 style={{display:'flex', color:'#fff', fontSize:'100%', textAlign:'center', backgroundColor:'#222', padding:'5px 10px', borderRadius:'10px', border:'1px solid #999', position:'fixed', bottom:'50px', zIndex:'1', opacity:'.9',}}><FiZoomIn style={{fontSize:'150%', position:'relative', top:'0px', left:'-4px',}} />Click To Zoom</h4>
