@@ -26,7 +26,7 @@ const Privacy = () => (
 <ol type="a">
 <li>
 		Permission is granted to temporarily download one copy of the materials<br />
-		(information or software) on the Todd Lambert web site for personal,<br />
+		(information or software) on the urbanfetish.com web site for personal,<br />
 		non-commercial transitory viewing only. This is the grant of a license,<br />
 		not a transfer of title, and under this license you may not:</li>
 		</ol>
