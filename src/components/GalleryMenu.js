@@ -67,13 +67,13 @@ const GalleryMenu = () => (
       
       <li className="galmenu-item"><Link to="/galleries/favorites" className="galgrad" title="Favorites" id="favorites">Popular<br />Favorites</Link></li>
       
-      <li className="galmenu-item"><Link to="/galleries/still-life" className="galgrad" title="Milky Way">Still<br />Life</Link></li>
+      <li className="galmenu-item"><Link to="/galleries/still-life" className="galgrad" title="Still Life">Still<br />Life</Link></li>
       
       <li className="galmenu-item"><Link to="/galleries/doors" className="galgrad" title="Door Ways">Door<br />Ways</Link></li>
       
-	  <li className="galmenu-item"><Link to="/galleries/industrial" className="galgrad" title="Ghost Towns">Modern<br />Industrial</Link></li>
+	  <li className="galmenu-item"><Link to="/galleries/industrial" className="galgrad" title="Modern Industrial">Modern<br />Industrial</Link></li>
 	  
-      <li className="galmenu-item"><Link to="/galleries/vehicles" className="galgrad" title="Crazy Geology">Vehicles<br />Transportation</Link></li>
+      <li className="galmenu-item"><Link to="/galleries/vehicles" className="galgrad" title="Icons of Rust">Icons of<br />Rust</Link></li>
       
       
       

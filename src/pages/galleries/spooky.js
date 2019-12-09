@@ -30,7 +30,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
 }
 
 .intro:before{
-	content: "Icons of Rust";
+	content: "Spooky and Haunted";
 
 position:absolute;
 display: flex;
@@ -54,9 +54,9 @@ font-size:400%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 `
 
 
-const GhostTowns = graphql`
-  query GhostTowns {
-    allFile(filter: { relativeDirectory: { eq: "vehicles" } }) {
+const Spooky = graphql`
+  query Spooky {
+    allFile(filter: { relativeDirectory: { eq: "spooky" } }) {
       edges {
         node {
           childImageSharp {
@@ -77,7 +77,7 @@ const GhostTowns = graphql`
 `
 
 const Gal1Page = () => {
-  const data = useStaticQuery(GhostTowns)
+  const data = useStaticQuery(Spooky)
   return (
 	  <CustomBox>
     <Layout>
