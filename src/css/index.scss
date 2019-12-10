@@ -1129,7 +1129,7 @@ body.dark * {
     
 .button-switcher{border:0px solid; animation: slideDown 1s forwards;}
 
-.headroom--unpinned .themer, .headroom--unpinned {display: none; /* z-index:-100 !important; */}
+.headroom--unpinned .themer, .headroom--unpinned {display: none; z-index: -5 !important; /* z-index:-100 !important; */}
 
 // .headroom--scrolled{transform: translateY(-200vh);}
 
