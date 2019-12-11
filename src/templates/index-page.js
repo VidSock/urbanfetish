@@ -3,19 +3,18 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Contact from '../components/Contact-inc'
 import Image from '../components/Image';
-import BlogRoll from '../components/BlogRoll'
 // import Intro from '../components/intro-home'
 //  import Gallery1 from '../components/Gallery1'
 import Layout from '../components/Layout'
 // import Install from '../components/Install'
-// import { Link } from 'gatsby'
+import { Link } from 'gatsby'
 // import Features from '../components/Features'
 // import BlogRoll from '../components/BlogRoll'
 import ScrollAnimation from 'react-animate-on-scroll'
 // import { IoIosArrowDropdownCircle } from 'react-icons/io'
 // import { FaAccessibleIcon, FaRegAddressCard, FaOdnoklassniki, FaBlind } from 'react-icons/fa'
-// import { FaRegAddressCard } from 'react-icons/fa'
-// import { GoGear, GoTelescope } from 'react-icons/go'
+import { FaRegAddressCard } from 'react-icons/fa'
+import { GoGear, GoTelescope } from 'react-icons/go'
 
 // import PopMedical from '../components/PopMedical'
 // import PopSemi from '../components/PopSemi'
@@ -25,11 +24,13 @@ import styled from "styled-components"
 const CustomBox = styled.div`
 *, *:before, *:after { box-sizing: border-box; }
 
+
+
+
 .intro img{border-radius:6px !important;}
 
-/*
 .intro:before{
-	content: "A pioneer in night photography";
+	content: "Urban Exploration Photography";
 
 position:absolute;
 display: flex;
@@ -39,7 +40,6 @@ font-size:280%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 animation: poof 1.5s forwards;
 animation-delay: 1.5s;
 }
-*/
 
 /*
 .boom{
@@ -180,7 +180,6 @@ background:linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc
   .content{flex-direction:column !important;}
   .content .stack{width:100% !important; margin:0 !important;}
   .pitch{font-size:250% !important; text-align:center;}
-  .split{display:block !important;}
   
 }
 
@@ -221,9 +220,9 @@ export const IndexPageTemplate = ({
     
 	<CustomBox>
 	
-  <div className=" intro">
+  <div className="outer intro">
   
-<div className="image-wrap" style={{display:'none', position:'relative', overflow:'hidden',}}>
+<div className="image-wrap" style={{position:'relative', overflow:'hidden',}}>
   
  
   
@@ -247,7 +246,7 @@ export const IndexPageTemplate = ({
             float: 'none',
           }}
         >
-          Follow me
+          Take a walk
         </h1>
         </ScrollAnimation>
         
@@ -262,7 +261,7 @@ export const IndexPageTemplate = ({
             textAlign: 'right', 
           }}
         >
-          into the
+          on the
         </h2>
         </ScrollAnimation>
         
@@ -279,7 +278,7 @@ export const IndexPageTemplate = ({
             textTransform: 'uppercase', 
           }}
         >
-          Night
+          Wild Side
         </h3>
         </ScrollAnimation>
 
@@ -290,10 +289,10 @@ export const IndexPageTemplate = ({
 
         
         </div>
-        
+       
 
-<div className=" kenburns-bottom-right" style={{position:'absolute', top:'0', width:'100vw', overflow:'hidden', border:'0px solid red', zIndex:'0',}}>
-        <Image className="" alt="Todd Lambert Web development for photographers" filename="night283.jpg" style={{backgroundSize:'cover', zIndex:'0',}} />
+<div className=" kenburns-bottom" style={{position:'absolute', top:'0', width:'100vw', overflow:'hidden', border:'0px solid red', zIndex:'0',}}>
+        <Image className="" alt="Todd Lambert Web development for photographers" filename="favorites-abandoned11.jpg" style={{backgroundSize:'cover', zIndex:'0',}} />
         </div>
 
 </div>
@@ -301,124 +300,113 @@ export const IndexPageTemplate = ({
 
 
   
-    <div id="hero"
-      className="full-width-image kenburns-bottom-right"
-      style={{ display:'none',
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-        backgroundPosition: `bottom right`,
-        width: '100%',
-        backgroundSize: 'cover',
-        height: '100vh',
-		paddingTop:'20px',
-        position: 'relative',
-//         overflowX: 'scroll',
-      }}
-    >
-    
-
-    
-    
- 
-
-    
-    
-
-    
-    <ScrollAnimation animateIn="bounceInDown" delay={1000}>
-        <h1
-          className="normal txtshadow-header hit-the-floor"
-          style={{
-            color: '#fff',
-            fontSize: '5rem',
-           position: 'relative',
-//            top: '100px',
-           right: '1%',
-//            backgroundColor: '#ff0000',
-            textAlign: 'right', 
-            float: 'none',
-          }}
-        >
-          Follow me
-        </h1>
-        </ScrollAnimation>
         
-        <ScrollAnimation animateIn="bounceInRight" delay={1100}>
-        <h2
-          className="narrow txtshadow mobile-txt"
-          style={{
-           fontSize:'3rem',
-           color: 'white',
-           position: 'relative',
-        right: '5%',
-            textAlign: 'right', 
-          }}
-        >
-          into the
-        </h2>
-        </ScrollAnimation>
-        
-        
-        <ScrollAnimation animateIn="bounceInUp" delay={1200}>
-        <h3
-          className="boom"
-          style={{
-           fontSize:'6rem',
-           color: 'white',
-           position: 'relative',
-//            top: '230px',
-           right: '1%',
-            textAlign: 'right',
-            textTransform: 'uppercase', 
-          }}
-        >
-          Night
-        </h3>
-        </ScrollAnimation>
-        
-       
-    </div>
-    
-    
     
 
 
 
 
 
+<ScrollAnimation animateIn="" animateOut="" initiallyVisible={true} animateOnce={true} animatePreScroll={true}>
+<div className="container">
+<div className="content" style={{padding:'1rem 1rem',}}>
+<Image alt="Todd Lambert Web development for photographers" filename="frontpage/workshop.jpg" /><br />
+<h2>Urban Exploration Photography</h2>
+<p>Take a walk on the wild side and follow along as Todd Lambert goes in search of the creepiest, freakiest, spookiest abandoned and desolate locations he can find. See places that you wouldn&apos;t dare go into, especially at night.</p>
+<br />
+<Link className="special grad" to="/galleries" style={{color:'#fff', textDecoration:'none', display:'flex',  justifyContent:'center', width:'230px',  padding:'3px 1rem 0 1rem', margin:'0 auto',}}>View Galleries <span style={{fontSize:'120%', position:'relative', right:'-8px', top:'0', color:'#fff',}}><GoTelescope /></span></Link>
 
 
 
-<div className="split" style={{display:'flex', padding:'1rem',}}>
-
-    <BlogRoll style={{padding:'1rem',}} />
-    
-    <div style={{padding:'1rem', minWidth:'35%', maxWidth:'35%',}}>
-    
-    <Image className="" alt="Todd Lambert Night photos" filename="twilightscapes-button.jpg" />
-    <br />
-    Experience a new style of landscape photography all through the eyes of Todd Lambert. Explore the unusual and see the Western States like you've never seen them before.<h5>Twilightscapes.com</h5>
-    
-    <br />
-    <br />
-    <Image className="" alt="Todd Lambert Night photos" filename="urban-fetish-button.jpg" />
-    <br />
-    Take a walk on the wild side and follow along as Todd Lambert goes in search of the creepiest, freakiest, spookiest abandoned and desolate locations he can find. See places that you wouldn't dare go into, especially at night.<h5>UrbanFetish.com</h5>
-    
-    </div>
-    
-    
-</div> 
-
-
-    
-    
-    
-    
-    <div className="outer">
-    <Contact className="container" />
 </div>
+</div>
+</ScrollAnimation>
+
+
+
+
+
+
+<ScrollAnimation animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+<div id="desc" className="container">
+<div className="content" style={{padding:'1rem 1rem', display:'flex', flexDirection:'row',}}>
+
+<div className="stack" style={{width:'60%',}}>
+<h2>Meet Todd Lambert</h2>
+<p>Todd is a new breed of photographer focusing on remote and mostly "unknown" locations such as graveyards and other abandoned places at night. Todd is an adventurous spirit who lives full-time on the road while traveling across the country.
+</p>
+</div>
+
+<div className="stack" style={{width:'40%', margin:'0 0 0 1rem', fontSize:'70%', }}>
+<Image alt="Todd Lambert Web development for photographers" filename="frontpage/todd.jpg" />Todd Lambert on location
+</div>
+
+</div>
+
+
+<Link className="special grad" to="/about" style={{color:'#fff', textDecoration:'none', display:'flex',  justifyContent:'center', width:'250px',  padding:'3px 1.5rem 0 1rem', margin:'0 auto',}}>More About Todd <span style={{fontSize:'120%', position:'relative', right:'-8px', top:'0', color:'#fff',}}><FaRegAddressCard /></span></Link>
+
+
+</div>
+</ScrollAnimation>
+
+
+
+
+
+
+
+<ScrollAnimation animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+
+<div className="container">
+<div className="content" style={{padding:'1rem 1rem', display:'flex', flexDirection:'row',}}>
+
+<div className="stack" style={{width:'40%', margin:'0 1rem 0 0', fontSize:'70%', }}>
+<Image alt="Todd Lambert Web development for photographers" filename="frontpage/twilightscapes-rig.jpg" />Subaru Outback with 18-foot Aliner trailer coming out of Hideout Canyon, UT.
+</div>
+< br />
+<div className="stack" style={{width:'60%',}}>
+<h2>Always on the hunt</h2>
+<p>Todd scours the Internet, drives countless miles and lives and works in his unique overlanding road trip setup. You see, Todd is a photographer that specializes in photographing vintage cars, abandoned places and other pieces of unique American history.
+</p>
+</div>
+
+</div>
+
+
+<Link className="special grad" to="/capabilities" style={{color:'#fff', textDecoration:'none', display:'flex',  justifyContent:'center', width:'200px',  padding:'3px .5rem 0 1rem', margin:'0 auto',}}>Todds Gear <span style={{fontSize:'120%', position:'relative', right:'-4px', top:'0', color:'#fff',}}><GoGear /></span></Link>
+
+
+</div>
+</ScrollAnimation>
+
+
+
+
+    
+       
+    <ScrollAnimation animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+    <div className="container" style={{marginTop:'',}}>
+<div className="content" style={{padding:'1rem 1rem 1rem 1rem', display:'flex', flexDirection:'row',}}>
+<h2 className="pitch">Like this site?</h2>
+
+<div>
+<p>Todd builds websites as his day job, and he would love to build your dream site, custom for you.</p>
+
+<p>An ultra-fast website that uses state-of-the-art technology, is super flexible, and modern designed to work great everywhere.</p>
+
+<h3 style={{textAlign:'center',}}>Let Todd build your site today!</h3>
+</div>
+</div>
+</div>
+</ScrollAnimation>
+    
+    
+    
+    
+    <ScrollAnimation animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+    <Contact />
+</ScrollAnimation>
 
 
 

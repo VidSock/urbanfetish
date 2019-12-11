@@ -12,6 +12,16 @@ import { FiZoomIn } from 'react-icons/fi'
 import styled from "styled-components"
 const CustomBox = styled.div`
 
+#favorites {
+background: #9b0c92;
+background: -moz-linear-gradient(left,  #9b0c92 0%, #e812e5 39%, #db00c9 62%, #9b0c92 100%);
+background: -webkit-linear-gradient(left,  #9b0c92 0%,#e812e5 39%,#db00c9 62%,#9b0c92 100%);
+background: linear-gradient(to right,  #9b0c92 0%,#e812e5 39%,#db00c9 62%,#9b0c92 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b0c92', endColorstr='#9b0c92',GradientType=1 );
+}
+
+
+
 .intro:before{
 	content: "Galleries: Popular Favorites";
 
@@ -21,6 +31,7 @@ align-items: center;
 justify-content: center;
 font-size:350%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 }
+
 
 
 
@@ -74,11 +85,11 @@ const Gal1Page = () => {
   const data = useStaticQuery(Galleries)
   return (
 	  <CustomBox>
-    <Layout>
-    <Install/>
+    
+    
+<Layout>
 
-
-      
+      <Install/>
       
 <div className="zoomer" style={{paddingTop:'0', display:'flex',alignItems:'center', justifyContent:'center',}}>
       <h4 style={{display:'flex', color:'#fff', fontSize:'100%', textAlign:'center', backgroundColor:'#222', padding:'5px 10px', borderRadius:'10px', border:'1px solid #999', position:'fixed', bottom:'50px', zIndex:'1', opacity:'.9',}}><FiZoomIn style={{fontSize:'150%', position:'relative', top:'0px', left:'-4px',}} />Click To Zoom</h4>
