@@ -1,34 +1,48 @@
 ---
 templateKey: 'blog-post'
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
-date: 2017-01-04T15:04:10.000Z
+title: 'Using SASS in Coda with WordPress on a remote server'
+date: 2019-01-04T15:04:10.000Z
 featuredpost: true
+featuredimage: /img/coda-sass-wordpress-1600x339.jpg
 description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+  I’ve been searching for a very long time for a solution to use SASS with Coda.
 tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  - css
+  - html
+  - sass
+  - web
 ---
+![chemex](/img/coda-sass-wordpress-1600x339.jpg)
 
-We expect the shipment of a limited quantity of green beans next Monday. We’ll be offering the roasted beans from Tuesday, but quantities are limited, so be quick.
 
-Blue Mountain Peak is the highest mountain in Jamaica and one of the highest peaks in the Caribbean at 7,402 ft. It is the home of Blue Mountain coffee and their famous tours. It is located on the border of the Portland and Saint Thomas parishes of Jamaica.
+Actually, with a free plugin from Panic’s website: ( https://panic.com/coda/plugins.php?id=101 ) I’ve been able to use SASS directly in my code editor of choice, Coda.
 
-## A little history
+However, due to the nature of how the SASS compiler works, it forces you to use a local development workflow as it is only capable of saving to a local directory.
 
-The Blue Mountains are considered by many to be a hiker's and camper's paradise. The traditional Blue Mountain trek is a 7-mile hike to the peak and consists of a 3,000-foot increase in elevation. Jamaicans prefer to reach the peak at sunrise, thus the 3–4 hour hike is usually undertaken in darkness. Since the sky is usually very clear in the mornings, Cuba can be seen in the distance.
+This sucks for me as I tend to work on remote servers constantly especially when I am working with WordPress. It’s just not feasible for me to have a ton of different WordPress installs setup on my Mac.
+
+Actually, I can and do have multiple installs using WordPress Multi Site but I don’t really want to have all of my sites, plus all of my clients sites running on my personal Mac.
+
+So for that reason, I have been resigned to not use SASS on WordPress installs just because it’s a pain in the ass to constantly upload an extra file from my desktop; up to the server over and over again while checking in a browser each time I make a change.
+
+## Enter the Swiss Army Tool called Hazel
+
+Now, I’ve had a tool installed on my Mac for several years called Hazel. Hazel is a sort of “Automator on Steroids” but I’ve never really thought about using it for this type of thing until recently. Download Hazel by Noodlesoft here: ( https://www.noodlesoft.com )
+
+You can buy Hazel for only $32 and it is totally worth it, as it is one of the most powerful tools I have on my Mac. It can do so many things. Things I had not even thought of, like this.
+
+I finally got fed up with not having SASS on my WordPress sites, so I set out to find a way to make it happen.
+
+In the end, Hazel actually has a great built-in capability to watch a folder and then do something based on different criteria like modified dates, etc…
 
 >Some of the plants found on the Blue Mountain cannot be found anywhere else in the world and they are often of a dwarfed sort.
 
-This is mainly due to the cold climate which inhibits growth. The small coffee farming communities of Claverty Cottage and Hagley Gap are located near the peak.
+So that is where I began and I quickly learned that Hazel now offers the ability to upload files to remote web servers through ftp, ssh, and sftp.
 
-## What you need to know before trying
+## Houston, we have launch!
 
-Jamaican Blue Mountain Coffee or Jamaica Blue Mountain Coffee is a classification of coffee grown in the Blue Mountains of Jamaica. The best lots of Blue Mountain coffee are noted for their mild flavor and lack of bitterness. Over the past few decades, this coffee has developed a reputation that has made it one of the most expensive and sought-after coffees in the world. Over 80% of all Jamaican Blue Mountain Coffee is exported to Japan. In addition to its use for brewed coffee, the beans are the flavor base of Tia Maria coffee liqueur.
+Bingo! This was the last piece of the puzzle and with this setup, I now edit one file on my local setup (the default style.css for WordPress) and then it automatically duplicates it as a preprocessed CSS file (using the aforementioned SASS plugin) and then Hazel handles the uploading automatically to my desired web server.
 
-Jamaican Blue Mountain Coffee is a globally protected certification mark, meaning only coffee certified by the Coffee Industry Board of Jamaica can be labeled as such. It comes from a recognized growing region in the Blue Mountain region of Jamaica, and its cultivation is monitored by the Coffee Industry Board of Jamaica.
+Thus, I can now easily use SASS with my remote WordPress installs and everything is just peachy. It’s fast, and works great without much lag or processor cycles on my machine.
 
-The Blue Mountains are generally located between Kingston to the south and Port Antonio to the north. Rising 7,402 ft, they are some of the highest mountains in the Caribbean. The climate of the region is cool and misty with high rainfall. The soil is rich, with excellent drainage. This combination of climate and soil is considered ideal for coffee.
+As a bonus, I’ve set up an additional rule to upload the .scss (SASS File) as well. So both are uploaded and stored on my server, so even if I access the server from somewhere else, I still have access to the SASS file which is a huge plus.

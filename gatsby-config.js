@@ -2,27 +2,12 @@ var proxy = require('http-proxy-middleware')
 
 module.exports = {
   siteMetadata: {
-    title: 'Abandoned Urbex Urban Exploration Photos and Locations | Urban Fetish',
-    siteUrl: `https://urbanfetish.com`,
+    title: 'Todd Lambert | Web Development and Photography',
+    siteUrl: `https://toddlambert.com`,
     description:
-      'Bringing new definitions to the genre of urban exploration photography. Experience some of the most remote, desolate locations photographed in the dead of night by world renown night photographer Todd Lambert.',
+      'World renown night photographer Todd Lambert and his web development business',
   },
   plugins: [
-	  
-
-    
-    
-    
-    
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: ["UA-140479230-1"],
-      },
-    },
-    
-    
-    
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     `gatsby-plugin-styled-components`,
@@ -102,9 +87,13 @@ module.exports = {
     
     
     
-
-    
-    
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        TrackingId: 'UA-49869143-1',
+        respectDNT: false,
+      }
+    },
     
     
     
@@ -114,13 +103,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `UrbanFetish`,
-        short_name: `UrbanFetish`,
+        name: `Twilightscapes`,
+        short_name: `Twilightscapes`,
         start_url: `/`,
         background_color: `#222`,
         theme_color: `#FAE042`,
         display: `standalone`,
-        icon: `src/img/urban-fetish-icon.png`,
+        icon: `src/img/tw-logo-white.svg`,
       },
     },
     

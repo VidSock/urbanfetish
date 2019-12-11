@@ -5,7 +5,9 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 
 import PopContact from '../components/PopContact'
-import 'typeface-francois-one'
+import 'typeface-lobster-two'
+import 'typeface-hammersmith-one'
+
 import "../css/index.scss"
 import Consent from '../components/Consent'
 

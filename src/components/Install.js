@@ -2,7 +2,7 @@ import React from 'react'
 // import { navigate } from 'gatsby-link'
 import { FiShare } from 'react-icons/fi';
 import { FaRegPlusSquare } from 'react-icons/fa';
-// import ScrollAnimation from 'react-animate-on-scroll'
+import ScrollAnimation from 'react-animate-on-scroll'
 import CookieConsent from "react-cookie-consent"
 import styled from "styled-components";
 
@@ -35,8 +35,9 @@ const CustomBox = styled.div`
 const Install = () => (
 <CustomBox style={{}} className="installer">
 
+<div id="installer" className="" style={{display:'flex', justifyContent:'center', alignItems:'center', position: 'fixed', top:'60px', width:'100%', zIndex:'1', borderRadius:'8px', }}>
 
-<div id="installer" className="bounceInDown" style={{display:'flex', justifyContent:'center', alignItems:'center', position: 'fixed', top:'60px', width:'100%', zIndex:'2', borderRadius:'8px', }}>
+<ScrollAnimation animateIn="bounceInDown" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
 
 <CookieConsent
 	debug={false}
@@ -82,9 +83,8 @@ const Install = () => (
     </div>
     
 </CookieConsent>
+</ScrollAnimation>
 </div>
-
-
 
 </CustomBox>
 )

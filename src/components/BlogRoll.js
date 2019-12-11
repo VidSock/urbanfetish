@@ -9,7 +9,7 @@ class BlogRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <div className="columns is-multiline">
+      <div className="columns content container">
         {posts &&
           posts.map(({ node: post }) => (
             <div className="is-parent column is-6" key={post.id}>
@@ -21,16 +21,20 @@ class BlogRoll extends React.Component {
                 <header>
                   {post.frontmatter.featuredimage ? (
                     <div className="featured-thumbnail">
-                      <PreviewCompatibleImage
+                     <Link
+                      className="title has-text-primary is-size-4"
+                      to={post.fields.slug}
+                    > <PreviewCompatibleImage
                         imageInfo={{
                           image: post.frontmatter.featuredimage,
                           alt: `featured image thumbnail for post ${
                             post.title
                           }`,
                         }}
-                      />
+                      /></Link>
                     </div>
                   ) : null}
+                  
                   <p className="post-meta">
                     <Link
                       className="title has-text-primary is-size-4"
@@ -90,7 +94,7 @@ export default () => (
                 featuredpost
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 120, quality: 100) {
+                    fluid(maxWidth: 300, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }
